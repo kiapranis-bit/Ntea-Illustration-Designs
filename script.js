@@ -21,7 +21,7 @@ menuToggle.addEventListener("click", () => {
 
 
 // Initialize EmailJS (get your credentials from emailjs.com)
-emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+emailjs.init("zBBTY7Ye7WbXF2fTW"); // Replace with your EmailJS public key
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault();
@@ -32,7 +32,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   const statusDiv = document.getElementById("formStatus");
   
   // Send email using EmailJS
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+  emailjs.send("service_ptk3sy4", "YOUR_TEMPLATE_ID", {
     to_email: "kiapranis@gmail.com", // Your email address
     from_name: name,
     from_email: email,
