@@ -123,6 +123,28 @@
 
 </section>
 
+
+	<!-- Add this to your index.html (before the closing </body> tag) -->
+
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Send us a Message</h2>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p id="formStatus" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
 <section class="footer-section">
   <div class="footer-container">
@@ -170,6 +192,8 @@
 </section>
 
 <script src="script.js"></script>
+
+	
 </body>
 </html>
 
