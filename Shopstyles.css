@@ -1,0 +1,296 @@
+* BASE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE FONT */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+/* LINK STYLING */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #1a73e8;
+}
+
+
+
+/* ==================================== navbar ==========================*/
+
+.navbar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+
+  /* 🔒 Prevent full-page height */
+  height: auto;
+  min-height: unset;
+  max-height: 80px;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  color: #333;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  padding: 8px 12px;
+  font-weight: 500;
+  color: #444;
+}
+
+.nav-menu li a:hover {
+  color: #1a73e8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0; /* prevents collapse */
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+/* Optional: slightly smaller second logo */
+.logo-img2 {
+  height: 36px;
+}
+
+
+/*============================ Available section======================================*/
+
+.shop-section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.shop-title {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.product-display {
+    max-width: 600px;     /* Controls overall product width */
+    margin: auto;
+}
+
+.product {
+    display: none;
+}
+
+.product.active {
+    display: block;
+}
+
+/* Medium Image Size */
+.product img {
+    width: 100%;
+    max-width: 450px;     /* Medium width */
+    height: 300px;        /* Medium height */
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Button Style */
+.order-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+.order-btn:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+
+
+/*****************Dtf Section****************************/
+
+.dtf-section {
+    padding: 100px 10%;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.dtf-section h2 {
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+/* Container */
+.dtf-container {
+    display: flex;
+    justify-content: flex-start;   /* Align left to right */
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.dtf-card {
+    background: #fff;
+    width: 300px;                  /* Fixed width */
+    height: 420px;                 /* Same height for all */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+.dtf-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Image */
+.dtf-card img {
+    width: 100%;
+    height: 200px;                 /* Fixed image height */
+    object-fit: cover;             /* Keeps images same size */
+    border-radius: 10px;
+}
+
+/* Price */
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/********************* Desin=gner section***********/
+
+.designer-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.designer-container {
+  width: 400px;
+  margin: auto;
+}
+
+canvas {
+  border: 1px solid #ddd;
+}
+
+.designer-controls {
+  margin-top: 20px;
+}
+.designer-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.designer-container {
+  width: 400px;
+  margin: auto;
+}
+
+canvas {
+  border: 1px solid #ddd;
+}
+
+.designer-controls {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*===========================footer section===========================*/
+
+
+.footer-section {
+  background: #1b1f8a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col a {
+  display: block;
+  padding: 4px 0;
+  color: #fff;
+}
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.footer-logo img {
+  height: 40px;       /* adjust if needed */
+  width: auto;
+  display: block;
+}
+
