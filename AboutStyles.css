@@ -1,0 +1,321 @@
+/* BASE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE FONT */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+/* LINK STYLING */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #1a73e8;
+}
+
+
+
+/* ==================================== navbar ==========================*/
+
+.navbar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+
+  /* 🔒 Prevent full-page height */
+  height: auto;
+  min-height: unset;
+  max-height: 80px;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  color: #333;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  padding: 8px 12px;
+  font-weight: 500;
+  color: #444;
+}
+
+.nav-menu li a:hover {
+  color: #1a73e8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0; /* prevents collapse */
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+/* Optional: slightly smaller second logo */
+.logo-img2 {
+  height: 36px;
+}
+
+
+/*============================ About section======================================*/
+
+.about-section {
+    padding: 80px 10%;
+    background: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header Section */
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about-header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Graphics Section */
+.about-graphics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Left Text */
+.graphics-text {
+    flex: 1;
+}
+
+.graphics-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.graphics-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Right Images */
+.graphics-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.graphics-container img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Make last image span full width */
+.graphics-container img:last-child {
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-graphics {
+        flex-direction: column;
+    }
+
+    .graphics-container {
+        grid-template-columns: 1fr;
+    }
+
+    .graphics-container img:last-child {
+        grid-column: span 1;
+    }
+}
+
+
+
+/************************** General Section Styling ****************/
+.service-section {
+    padding: 100px 10%;
+}
+
+/* Background variations */
+.service-section.light {
+    background: #ffffff;
+}
+
+.service-section.dark {
+    background: #f5f5f5;
+}
+
+/* Inner Wrapper */
+.service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Reverse layout */
+.service-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text Styling */
+.service-text {
+    flex: 1;
+}
+
+.service-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Image Grid */
+.service-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.service-images img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Make last image full width */
+.service-images img:last-child {
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .service-wrapper {
+        flex-direction: column;
+    }
+
+    .service-wrapper.reverse {
+        flex-direction: column;
+    }
+
+    .service-images {
+        grid-template-columns: 1fr;
+    }
+
+    .service-images img:last-child {
+        grid-column: span 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================footer section===========================*/
+
+
+.footer-section {
+  background: #1b1f8a;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col a {
+  display: block;
+  padding: 4px 0;
+  color: #fff;
+}
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.footer-logo img {
+  height: 40px;       /* adjust if needed */
+  width: auto;
+  display: block;
+}
+
